@@ -21,7 +21,7 @@
 
 // Call back channel to dart used for when a listener function is triggered.
 @property(strong, nonatomic, readonly) FlutterMethodChannel *callbackChannel;
-@property(strong, nonatomic, readonly) NSObject<FlutterTextureRegistry> *registry;
+@property(weak, nonatomic, readonly) NSObject<FlutterTextureRegistry> *registry;
 @property(strong, nonatomic, readonly) NSObject<FlutterBinaryMessenger> *messenger;
 @property(strong, nonatomic, readonly) NSObject<FlutterPluginRegistrar> *registrar;
 
