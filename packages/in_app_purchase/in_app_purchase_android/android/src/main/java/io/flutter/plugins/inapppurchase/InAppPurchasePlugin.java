@@ -8,7 +8,6 @@ import android.app.Activity;
 import android.app.Application;
 import android.content.Context;
 import androidx.annotation.VisibleForTesting;
-import com.android.billingclient.api.BillingClient;
 import io.flutter.embedding.engine.plugins.FlutterPlugin;
 import io.flutter.embedding.engine.plugins.activity.ActivityAware;
 import io.flutter.embedding.engine.plugins.activity.ActivityPluginBinding;
@@ -100,7 +99,7 @@ public class InAppPurchasePlugin implements FlutterPlugin, ActivityAware {
   private void setupMethodChannel(Activity activity, BinaryMessenger messenger, Context context) {
     methodChannel = new MethodChannel(messenger, "plugins.flutter.io/in_app_purchase");
     methodCallHandler =
-        new MethodCallHandlerImpl(activity, context, methodChannel, new BillingClientFactoryImpl());
+        new MethodCallHandlerImpl(activity, context, methodChannel);
     methodChannel.setMethodCallHandler(methodCallHandler);
   }
 
