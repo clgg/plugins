@@ -24,7 +24,7 @@ dependencies:
     git:
       url: https://github.com/botslabapp/plugins
       path: packages/in_app_purchase/in_app_purchase_android
-      ref: 9166d1fdc78db4e3dec88a27d2451159d4ee5bf8
+      ref: a75b982a16de3cc9f0d086c08808b2b328ff0623
   in_app_purchase_ios:
     git:
       url: https://github.com/botslabapp/plugins
