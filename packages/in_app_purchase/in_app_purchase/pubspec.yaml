@@ -20,7 +20,11 @@ dependencies:
   flutter:
     sdk: flutter
   in_app_purchase_platform_interface: ^1.0.0
-  in_app_purchase_android: ^0.1.0
+  in_app_purchase_android:
+    git:
+      url: https://github.com/botslabapp/plugins
+      path: packages/in_app_purchase/in_app_purchase_android
+      ref: 9166d1fdc78db4e3dec88a27d2451159d4ee5bf8
   in_app_purchase_ios:
     git:
       url: https://github.com/botslabapp/plugins
