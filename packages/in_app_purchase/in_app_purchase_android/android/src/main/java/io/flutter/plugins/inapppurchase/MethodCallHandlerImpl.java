@@ -42,7 +42,7 @@ class MethodCallHandlerImpl
     MethodCallHandlerImpl(
             @Nullable Activity activity,
             @NonNull Context applicationContext,
-            @NonNull MethodChannel methodChannel)
+            @NonNull MethodChannel methodChannel){
         this.applicationContext = applicationContext;
         this.activity = activity;
         this.methodChannel = methodChannel;
